@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Edition - Modern Shoe Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">NIKE<span class="edition-text">EDITION</span></h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#buy">Buy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h2>Unleash Your Potential.</h2>
+                <p>The **Nike Edition** is where performance meets avant-garde design. Engineered for speed, built for the future. Experience the next generation of athletic footwear.</p>
+                <a href="#products" class="cta-button">Explore Collection</a>
+            </div>
+            <div class="hero-image">
+                <img src="shoe-hero-placeholder.png" alt="Futuristic Nike Shoe" class="floating-shoe">
+                
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="products" class="products-section">
+            <h3>Our Cutting-Edge Products</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="shoe-product-1-placeholder.png" alt="Air Runner Volt">
+                    <h4>Air Runner Volt</h4>
+                    <p>Maximum cushioning, electric style.</p>
+                    <span class="price">$180.00</span>
+                    <button class="add-to-cart-btn" data-product="Air Runner Volt">Add to Cart</button>
+                    
+                </div>
+                <div class="product-card">
+                    <img src="shoe-product-2-placeholder.png" alt="Elite Force Black">
+                    <h4>Elite Force Black</h4>
+                    <p>The ultimate performance street shoe.</p>
+                    <span class="price">$220.00</span>
+                    <button class="add-to-cart-btn" data-product="Elite Force Black">Add to Cart</button>
+                    
+                </div>
+                <div class="product-card">
+                    <img src="shoe-product-3-placeholder.png" alt="Aero Max White">
+                    <h4>Aero Max White</h4>
+                    <p>Feather-light with aggressive tread.</p>
+                    <span class="price">$150.00</span>
+                    <button class="add-to-cart-btn" data-product="Aero Max White">Add to Cart</button>
+                    
+                </div>
+                <div class="product-card">
+                    <img src="shoe-product-4-placeholder.png" alt="Vapor Prime Red">
+                    <h4>Vapor Prime Red</h4>
+                    <p>Redefining speed and energy return.</p>
+                    <span class="price">$250.00</span>
+                    <button class="add-to-cart-btn" data-product="Vapor Prime Red">Add to Cart</button>
+                    
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="reviews" class="reviews-section">
+            <h3>What Our Customers Say</h3>
+            <div class="review-container">
+                <div class="review-card">
+                    <p class="review-text">"The comfort and style are unmatched. Felt like I was wearing a cloud! The Elite Force is a game changer."</p>
+                    <div class="reviewer-info">
+                        <span class="stars">★★★★★</span>
+                        <p class="reviewer-name">- Alex K.</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Incredible design. The **Volt** accents on the Air Runner really pop against the dark theme. Highly recommend!"</p>
+                    <div class="reviewer-info">
+                        <span class="stars">★★★★★</span>
+                        <p class="reviewer-name">- Jordan P.</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Fast shipping and the quality is exactly as advertised. My new favorite running shoe. A flawless experience."</p>
+                    <div class="reviewer-info">
+                        <span class="stars">★★★★☆</span>
+                        <p class="reviewer-name">- Casey M.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="cart" class="cart-section">
+            <h3>Your Shopping Cart 🛒</h3>
+            <div class="cart-box">
+                <ul id="cart-items" class="cart-items">
+                    <li class="empty-cart-message">Your cart is currently empty.</li>
+                </ul>
+                <div class="cart-summary">
+                    <p>Total Items: <span id="cart-total-items">0</span></p>
+                    <button class="checkout-btn" onclick="document.getElementById('buy').scrollIntoView({ behavior: 'smooth' });">Proceed to Buy</button>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="buy" class="buy-section">
+            <h3>Finalize Your Purchase</h3>
+            <div class="buy-container">
+                <div class="contact-details">
+                    <h4>Contact & Shipping Details</h4>
+                    <form id="buy-form">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="text" placeholder="Shipping Address" required>
+                        <button type="submit" class="buy-button">Complete Order</button>
+                    </form>
+                </div>
+                <div class="popup-box floating-box">
+                    <h4>🎉 Limited Time Offer 🎉</h4>
+                    <p>Get **10% OFF** your first order by signing up for our newsletter!</p>
+                    <button class="close-popup">Got it!</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Nike Edition. All rights reserved. | Designed for Speed.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
